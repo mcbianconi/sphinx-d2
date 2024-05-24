@@ -4,7 +4,6 @@ Usage
 Instalation
 ------------
 
-
 Install using pip
 
 .. code-block:: console
@@ -13,3 +12,5 @@ Install using pip
 
 
 got it
+
+.. todo:: detalhar como usar

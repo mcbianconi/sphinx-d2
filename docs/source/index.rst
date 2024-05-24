@@ -6,6 +6,8 @@ Test project
 Check out :doc:`usage` section
 
 
+.. helloworld::
+
 .. note::
    This is under development
 
@@ -14,10 +16,14 @@ Check out :doc:`usage` section
     api
 
 
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Todos
+=====
+
+.. todolist::

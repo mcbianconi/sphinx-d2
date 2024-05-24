@@ -3,6 +3,8 @@ API
 
 API docs
 
+.. todo:: Completar doc
+
 .. currentmodule:: sphinx_d2
 
 
