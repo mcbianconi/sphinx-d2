@@ -32,4 +32,4 @@ jobs:
         run: hatch build
       - name: Publish on PyPI
         if: github.ref == 'refs/heads/main'
-        run: hatch publish -u $HATCH_INDEX_USER -a $HATCH_INDEX_AUTH -n
+        run: hatch publish -u __token__ -a ${{ secrets.HATCH_INDEX_AUTH }} -n
