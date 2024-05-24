@@ -3,7 +3,13 @@ API
 
 API docs
 
-.. autosummary::
-   :toctree: generated
+.. currentmodule:: sphinx_d2
 
-    main
+
+.. autosummary::
+   :toctree: sphinx_d2
+   :recursive:
+   
+    sphinx_d2.main
+
+

@@ -31,13 +31,35 @@ Source = "https://github.com/mcbianconi/sphinx-d2"
 [tool.hatch.version]
 path = "src/sphinx_d2/__about__.py"
 
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/docs",
+  "/tests",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sphinx_d2"]
+
+
 [tool.hatch.envs.default]
+installer = "uv"
+dependencies = [
+]
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "sphinx",
+]
+[tool.hatch.envs.docs.scripts]
+autogen = "sphinx-autogen docs/source/api.rst"
+
+[tool.hatch.envs.tests]
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
-  "sphinx",
 ]
-[tool.hatch.envs.default.scripts]
+
+[tool.hatch.envs.tests.scripts]
 test = "pytest {args:tests}"
 test-cov = "coverage run -m pytest {args:tests}"
 cov-report = [

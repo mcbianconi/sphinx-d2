@@ -5,18 +5,13 @@ Test project
 
 Check out :doc:`usage` section
 
-.. autofunction:: main.main
-
-.. autoexception:: main.BaseError
 
 .. note::
-   Teste
+   This is under development
 
 .. toctree::
-   usage
-   api
-   :maxdepth: 2
-   :caption: Contents:
+    usage
+    api
 
 
 
